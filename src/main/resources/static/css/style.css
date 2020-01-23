@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quantico', sans-serif;
+  font-family: "Quantico", sans-serif;
 }
 
 body {
@@ -48,12 +48,15 @@ header > div:first-child {
 
 article {
   padding: 10px;
-}
-
-
-article > div:last-child {
   display: flex;
-  margin: 20px auto;
+  justify-content: center;
+}
+article > div {
+  margin: 10px 62px;
+  margin-bottom: 0px;
+}
+article > div:nth-child(2) {
+  display: flex;
   width: 250px;
   height: 250px;
   border: 5px solid white;
@@ -62,60 +65,68 @@ article > div:last-child {
   background-image: url("../images/circle.png");
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 0px;
 }
 
 article > div > img {
   width: 100%;
 }
-footer > div:first-child {
-  position: fixed;
-  left: 40px;
-  top:80px;
+article > div:first-child {
   width: 29%;
-  height: 380px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+article > div:first-child > div {
+  margin-top: auto;
+  position: relative;
+  color: white;
+}
+article > div:nth-child(3) {
+  width: 29%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px solid white;
   padding: 5px;
+  margin-top: 100px;
+  overflow: auto;
 }
-footer > div:first-child > div {
+article > div:nth-child(3) > div {
+  margin-top: auto;
+  position: relative;
   color: white;
 }
-footer > div:nth-child(2) {
-  position: fixed;
-  right: 40px;
-  top: 150px;
-  width: 29%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid white;
-  padding: 5px;
-}
-footer > div:nth-child(2) > div {
-  color: white;
+@media only screen and (max-width: 1236px) {
+  article > div:nth-child(3) > div {
+    height: 190px;
+    overflow: auto;
+  }
 }
 footer > div:last-child {
-  position: fixed;
-  left: 41%;
-  bottom: 40px;
+  position: absolute;
+  left: 44%;
+  margin-top: 70px;
   width: 40%;
   height: 120px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border: 5px solid white;
   background-color: black;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   font-size: 20px;
 }
 footer > div:last-child > div {
   color: white;
 }
-footer > div:last-child >a{
+footer > div:last-child > a {
   color: white;
   text-decoration: none;
 }
