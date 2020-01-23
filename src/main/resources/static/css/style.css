@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quantico', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  background-image: url("../images/circuit.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+}
+
+header > div > input {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  margin: 10px;
+  margin-left: 245px;
+  margin-top: 25px;
+  background-color: white;
+  border: none;
+  appearance: none;
+  border-radius: 10px;
+  outline: 0;
+}
+
+header > div > input:hover {
+  cursor: pointer;
+}
+header > div:first-child {
+  font-size: 30px;
+  text-align: center;
+  margin-left: -40px;
+  margin-top: 25px;
+}
+
+article {
+  padding: 10px;
+}
+
+
+article > div:last-child {
+  display: flex;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  border: 5px solid white;
+  border-radius: 98%;
+  overflow: hidden;
+  background-image: url("../images/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article > div > img {
+  width: 100%;
+}
+footer > div:first-child {
+  position: fixed;
+  left: 40px;
+  top:80px;
+  width: 29%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  padding: 5px;
+}
+footer > div:first-child > div {
+  color: white;
+}
+footer > div:nth-child(2) {
+  position: fixed;
+  right: 40px;
+  top: 150px;
+  width: 29%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  padding: 5px;
+}
+footer > div:nth-child(2) > div {
+  color: white;
+}
+footer > div:last-child {
+  position: fixed;
+  left: 41%;
+  bottom: 40px;
+  width: 40%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+footer > div:last-child > div {
+  color: white;
+}
+footer > div:last-child >a{
+  color: white;
+  text-decoration: none;
+}
