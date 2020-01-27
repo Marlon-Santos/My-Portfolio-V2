@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    height: 100%;
+    background-image: url("../../images/circuittree.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article>div:nth-child(2) {
+    width: 500px;
+    height: 300px;
+    background-image: url(../../images/filo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 150px 20px;
+}
+
+article>div:nth-child(1) {
+    width: 25%;
+    height: 500px;
+    border: 5px solid white;
+    background-color: black;
+}
+
+article>div:nth-child(3) {
+    width: 25%;
+    height: 500px;
+    border: 5px solid white;
+    background-color: black;
+}
